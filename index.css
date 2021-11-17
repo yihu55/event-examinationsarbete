@@ -1,0 +1,112 @@
+body {
+  background-color: #f7f7f7;
+  display: flex;
+  font: 100% Helvetica, sans-serif;
+}
+
+header {
+  width: 20%;
+}
+header nav {
+  margin: 150px 0px 0px 100px;
+}
+header nav li {
+  margin: 50px 0px 50px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+main {
+  width: 80%;
+}
+main h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  margin: 50px;
+}
+main #header_image {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 50px;
+}
+main #container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+main #container #box {
+  width: 350px;
+  height: 600px;
+}
+main #container #box img {
+  width: 350px;
+  height: 300px;
+}
+main #container #box #eventDetail {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: #080808;
+}
+
+img {
+  width: 350px;
+  height: 300px;
+}
+
+li {
+  list-style: none;
+}
+
+#detail_images_container {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 50px;
+}
+
+#event_form,
+#contact_form {
+  width: 50%;
+  margin-top: 50px;
+}
+#event_form div input,
+#event_form select,
+#event_form button,
+#contact_form div input,
+#contact_form select,
+#contact_form button {
+  width: 100%;
+  margin-top: 10px;
+  height: 40px;
+}
+#event_form div textarea,
+#contact_form div textarea {
+  width: 100%;
+}
+
+#omoss_main {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  margin: 50px;
+}
+section img {
+  width: 350px;
+  height: 300px;
+}
+section #bigImage {
+  width: 100%;
+  height: 300px;
+}
+
+#vd_section {
+  background-color: red;
+  display: flex;
+}
+
+/*# sourceMappingURL=index.css.map */

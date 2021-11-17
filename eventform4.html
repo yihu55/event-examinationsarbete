@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="index.scss">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <li><a href="landing1.html">Home</a></li>
+            <li><a href="eventlist2.html">Events</a></li>
+            <li><a href="eventform4.html">Create Event</a></li>
+            <li><a href="omoss5.html">Om Oss</a></li>
+        </nav>
+    </header>
+    <main>
+        <form id="event_form">
+            <div>
+                <p><label for="event-name">Name</label></p>
+                <input type="text">
+            </div>
+            <div>
+                <p><label for="event-date">Datum</label></p>
+                <input type="date">
+            </div>
+            <div>
+                <p><label for="event-description">Description</label></p>
+                <textarea name="event-description" id="event_description" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <p></p><label for="event-agenda">Agenda</label></p>
+                <textarea name="event-agenda" id="event_agenda" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <p><label for="file">Upload images:</label></p>
+                <input type="file" id="file" name="file">
+                <input type="file" id="file" name="file">
+                <input type="file" id="file" name="file">
+                <input type="file" id="file" name="file">
+            </div>
+            <div>
+                <p><label for="event-select">Choose a event type:</label></p>
+                <select name="event-type" id="event_select">
+                <option value="entertainment">entertainment</option>
+                <option value="education">education</option>
+                <option value="after-work">after work</option>
+                <option value="sport">sport</option>
+            </select>
+            </div>
+            <div>
+                <button id="submit">Submit</button>
+            </div>
+        </form>
+
+    </main>
+</body>
+
+</html>
