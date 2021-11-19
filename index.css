@@ -2,6 +2,8 @@ body {
   background-color: #f7f7f7;
   display: flex;
   font: 100% Helvetica, sans-serif;
+  background-image: url("https://media.istockphoto.com/photos/empty-white-studio-room-abstract-background-picture-id1147521090?b=1&k=20&m=1147521090&s=170667a&w=0&h=z2Syz9Pwcb55xKIIbp08AFPJyVjZM28t5IZLyyhqV3k=");
+  background-size: 100%;
 }
 
 header {
@@ -32,19 +34,15 @@ main #header_image {
 }
 main #container {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
 }
-main #container #box {
-  width: 350px;
-  height: 600px;
-}
-main #container #box img {
-  width: 350px;
-  height: 300px;
-}
-main #container #box #eventDetail {
+main #container #eventDetail {
   display: flex;
   flex-direction: column;
+}
+main #container #eventDetail > * {
+  margin: 10px 0px 10px;
 }
 
 a {
@@ -52,19 +50,24 @@ a {
   color: #080808;
 }
 
-img {
-  width: 350px;
-  height: 300px;
-}
-
 li {
   list-style: none;
 }
 
+img {
+  width: 350px;
+  height: 300px;
+  border-radius: 10px;
+}
+
 #detail_images_container {
   display: grid;
-  grid-template-columns: auto auto;
-  row-gap: 50px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 50px;
+}
+#detail_images_container img {
+  width: 200px;
+  height: 150px;
 }
 
 #event_form,
@@ -98,6 +101,7 @@ section {
 section img {
   width: 350px;
   height: 300px;
+  border-radius: 10px;
 }
 section #bigImage {
   width: 100%;
