@@ -1,55 +1,55 @@
             @use 'variables';
-            @mixin imageSize() {
-                width: 350px;
-                height: 300px;
-                border-radius: 10px;
-            }
-            
-            // @mixin boxSize() {
-            //     width: 350px;
-            //     height: 600px;
-            // }
             @mixin centerifyItem() {
                 display: flex;
                 justify-content: center;
             }
             
-            //containers flexbox
+            //containers flexbox has been used only once
             @mixin displayFlexColumn() {
                 display: flex;
                 flex-direction: column;
             }
             
-            //boxes flexbox
-            @mixin displayCenter() {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                text-align: center;
-            }
-            
-            @mixin bigImage() {
+            @mixin imageSize() {
                 width: 100%;
                 height: 300px;
+                border-radius: 10px;
+            }
+            
+            @mixin linkHover() {
+                background-color: variables.$backgroundColorBlack;
+                color: variables.$textColorwhite;
             }
             
             body {
                 background-color: variables.$backgroundColorWhite;
                 display: flex;
                 font: 100% variables.$font-stack;
-                background-image: url("https://media.istockphoto.com/photos/empty-white-studio-room-abstract-background-picture-id1147521090?b=1&k=20&m=1147521090&s=170667a&w=0&h=z2Syz9Pwcb55xKIIbp08AFPJyVjZM28t5IZLyyhqV3k=");
-                background-size: 100%;
             }
             
             header {
                 width: 20%;
                 nav {
-                    //@include displayCenter();
-                    margin: 150px 0px 0px 100px;
+                    position: sticky;
+                    top: 0;
+                    // margin: 150px 0px 0px 100px;
+                    height: 400px;
+                    padding-top: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly;
                     li {
-                        margin: 50px 0px 50px;
                         font-size: variables.$fontSize;
                         font-weight: 600;
+                        position: relative;
+                        a {
+                            padding: 30px;
+                            border-radius: 10px;
+                            &:hover {
+                                @include linkHover();
+                            }
+                        }
                     }
                 }
             }
@@ -60,25 +60,41 @@
                 h1 {
                     @include centerifyItem();
                     font-size: variables.$fontSizeBiggest;
+                    letter-spacing: 1rem;
+                    font-size: variables.$fontSizeBiggest;
                     margin: 50px;
                 }
                 #header_image {
-                    @include bigImage();
+                    @include imageSize();
                     margin-bottom: 50px;
                 }
                 #container {
                     display: grid;
                     grid-template-columns: 1fr 1fr 1fr;
                     grid-gap: 50px;
-                    // #box {
-                    //     //@include boxSize(); //display: flex;
-                    //     img {
-                    //         //@include imageSize()
-                    //     }
+                    img {
+                        @include imageSize();
+                    }
                     #eventDetail {
                         @include displayFlexColumn();
                         >* {
                             margin: 10px 0px 10px;
+                        }
+                        time {
+                            font-weight: 600;
+                            font-style: italic;
+                        }
+                        #moreinfo {
+                            display: none;
+                        }
+                        a {
+                            &:hover {
+                                width: fit-content;
+                                @include linkHover();
+                            }
+                            &:active {
+                                color: red;
+                            }
                         }
                     }
                     // }
@@ -95,10 +111,6 @@
                 list-style: none;
             }
             
-            img {
-                @include imageSize();
-            }
-            
             //eventdetails3
             #detail_images_container {
                 img {
@@ -106,8 +118,7 @@
                     height: 150px;
                 }
                 display: grid;
-                grid-template-columns: repeat(4,
-                1fr);
+                grid-template-columns: repeat(4, 1fr);
                 margin-top:50px;
             }
             
@@ -132,20 +143,17 @@
             #omoss_main {
                 display: flex;
                 flex-direction: column;
-                //align-items: flex-start;
-            }
-            
-            section {
-                margin: 50px;
-                img {
-                    @include imageSize();
+                section {
+                    margin: 50px;
+                    img {
+                        width: 300px;
+                        border-radius: 10px;
+                    }
+                    #bigImage {
+                        @include imageSize();
+                    }
                 }
-                #bigImage {
-                    @include bigImage();
+                #vd_section {
+                    display: flex;
                 }
-            }
-            
-            #vd_section {
-                background-color: red;
-                display: flex;
             }

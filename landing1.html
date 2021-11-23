@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>landingpage</title>
     <script src="scripts/jquery.min.js"></script>
     <script src="scripts/main.js"></script>
-    <link rel="stylesheet" href="index.scss">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.scss">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
@@ -22,33 +22,33 @@
         </nav>
     </header>
     <main>
-        <h1>Friends Arena</h1>
-        <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" alt="homepage_image" id="header_image">
+        <h1 id="head-title">Events Arena</h1>
+        <img src="https://media.istockphoto.com/photos/chalkboard-and-colored-balloons-on-a-wooden-background-picture-id1263908025?b=1&k=20&m=1263908025&s=170667a&w=0&h=DDeDvtWSu99Z5yKrbx0X3M26uHGP1SCBV_-zXKS-FSQ=" alt="homepage_image" id="header_image">
         <div id="container">
             <div id="box">
                 <img src="https://www.stockholmlive.com/assets/img/Friends-arena_552x426-3c2ee60e1d.png" alt="AIK">
                 <div id="eventDetail">
                     <h2>AIK fotboll</h2>
-                    <p>2021-12-15</p>
+                    <p><time datetime="2021-12-15">2021-12-15</time></p>
                     <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem!</p>
-                    <p>sport</p>
+                    <h4 id="category">SPORT</h4>
                     <div>
                         <button class="merinfo">mer info</button>
-                        <div style="display:none;">mer information om fotboll evengemanget, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis accusamus</div>
+                        <div id="moreinfo">mer information om fotboll evengemanget, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis accusamus</div>
                     </div>
-                    <a href="eventdetail3.html">www.aik.com</a>
+                    <a href="eventdetail3.html" target="_blank">www.aik.com</a>
                 </div>
             </div>
             <div id="box">
                 <img src="https://www.stockholmlive.com/assets/img/SIHS2021_552x426_FriendsArena-cd74a38244.png" alt="hourse_show">
                 <div id="eventDetail">
                     <h2>Horse Run</h2>
-                    <p>2021-12-15</p>
+                    <p><time datetime="2021-12-15">2021-12-15</time></p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem!</p>
-                    <p>sport</p>
+                    <h4 id="category">SPORT</h4>
                     <div>
                         <button class="merinfo">mer info</button>
-                        <div style="display:none;">mer information om horse evengemanget, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis accusamus</div>
+                        <div id="moreinfo">mer information om horse evengemanget, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis accusamus</div>
                     </div>
                     <a href="#">www.bbb.com</a>
 
@@ -58,12 +58,12 @@
                 <img src="https://www.stockholmlive.com/assets/img/MF2022_FriendsArena_552x426px-1327ee5577.jpg" alt="melodifestivalen">
                 <div id="eventDetail">
                     <h2>MELODIFESTIVALEN</h2>
-                    <p>2021-12-15</p>
+                    <p><time datetime="2021-12-15">2021-12-15</time></p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem!</p>
-                    <p>entertainment</p>
+                    <h4 id="category">ENTERTAINMENT</h4>
                     <div>
                         <button class="merinfo">mer info</button>
-                        <div style="display:none;">mer information om melodifestivalen evengemanget, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis accusamus</div>
+                        <div id="moreinfo">mer information om melodifestivalen evengemanget, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis accusamus</div>
                     </div>
                     <a href="#">www.ccc.com</a>
                 </div>
@@ -72,12 +72,12 @@
                 <img src="https://www.stockholmlive.com/assets/img/celine_552x426px_190925-5e630df8df.jpg" alt="celine_dion_courage">
                 <div id="eventDetail">
                     <h2>Celine Dion</h2>
-                    <p>2021-12-15</p>
+                    <p><time datetime="2021-12-15">2021-12-15</time></p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem!</p>
-                    <p>entertainment</p>
+                    <h4 id="category">ENTERTAINMENT</h4>
                     <div>
                         <button class="merinfo">mer info</button>
-                        <div style="display:none;">mer information om Celine Dion evengemanget, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis accusamus</div>
+                        <div id="moreinfo">mer information om Celine Dion evengemanget, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis accusamus</div>
                     </div>
                     <a href="#">www.ddd.com</a>
                 </div>
@@ -87,12 +87,12 @@
                 <img src="https://www.stockholmlive.com/assets/img/AR_552x426px_1.0_211102-f1571cbd23.jpg" alt="arena_run">
                 <div id="eventDetail">
                     <h2>ARENA RUN</h2>
-                    <p>2021-12-15</p>
+                    <p><time datetime="2021-12-15">2021-12-15</time></p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem!</p>
-                    <p>sport</p>
+                    <h4 id="category">SPORT</h4>
                     <div>
                         <button class="merinfo">mer info</button>
-                        <div style="display:none;">mer information om arena run evengemanget, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis accusamus</div>
+                        <div id="moreinfo">mer information om arena run evengemanget, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis accusamus</div>
                     </div>
                     <a href="#">www.eee.com</a>
                 </div>
@@ -101,12 +101,12 @@
                 <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80" alt="newyear_firande">
                 <div id="eventDetail">
                     <h2>NEW YEAR CELEBRATING</h2>
-                    <p>2021-12-30</p>
+                    <p><time datetime="2021-12-15">2021-12-15</time></p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, exercitationem!</p>
-                    <p>entertainment</p>
+                    <h4 id="category">ENTERTAINMENT</h4>
                     <div>
                         <button class="merinfo">mer info</button>
-                        <div style="display:none;">mer information om new year celebratingevengemanget, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis accusamus</div>
+                        <div id="moreinfo">mer information om new year celebratingevengemanget, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis accusamus</div>
                     </div>
                     <a href="#">www.fff.com</a>
                 </div>
